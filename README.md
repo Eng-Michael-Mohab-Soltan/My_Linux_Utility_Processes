@@ -16,15 +16,24 @@ gcc My_Mv.c -o My_Mv
 gcc My_Pwd.c -o My_Pwd
 ```
 ## Runtime Examples
-```bash
+
 # Copy with safety checks
+```bash
 ./My_Cp secrets.txt backup.txt
-Echo with precise spacing
+```
+
+# Echo with precise spacing
+```bash
 ./My_Echo Hello World
+```
 
 # Move with atomic replacement
+```bash
 ./My_Mv old_name.txt new_location.txt"
+```
+
 # Show current directory path
+```bash
 ./My_Pwd"
 ```
 
