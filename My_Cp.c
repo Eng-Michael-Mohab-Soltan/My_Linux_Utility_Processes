@@ -24,13 +24,11 @@ int main(int argc, char *argv[]) {
 
     char text[1024];
     int bytes;
-    while (bytes = read(fd1, text, sizeof(text)) > 0) {
+    while ((bytes = read(fd1, text, sizeof(text))) > 0) {
         write(fd2, text, bytes);
     }
 
     close(fd1);
     close(fd2);
-    printf("Copy done!\n");
     return 0;
 }
-
